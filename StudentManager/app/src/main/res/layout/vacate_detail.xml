@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_height="match_parent">
+    <include  android:id="@+id/dept" layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="请假人（学号）"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/vacateID"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx1"
+        android:layout_marginLeft="26.5sp"
+        android:layout_toRightOf="@+id/tx1"
+        android:text="31701077"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="所属部门"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/departmentname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx2"
+        android:layout_toRightOf="@+id/tx2"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="请假开始时间"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/leavetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx3"
+        android:layout_toRightOf="@+id/tx3"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tx5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="返校时间"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/backtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx5"
+        android:layout_toRightOf="@+id/tx3"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="请假原因"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignBaseline="@id/tx4"
+        android:layout_marginLeft="26.5sp"
+        android:layout_toRightOf="@+id/tx5"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

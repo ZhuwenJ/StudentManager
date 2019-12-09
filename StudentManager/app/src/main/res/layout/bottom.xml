@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mFragment"
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:layout_marginBottom="2dp"
+        android:id="@+id/mRadioGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#F5F5F5"
+        android:layout_height="65dp">
+        <RadioButton
+            android:drawableTop="@drawable/ic_news"
+            android:button="@null"
+            android:paddingTop="8sp"
+            android:id="@+id/message"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:text="消息"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:drawableTop="@drawable/ic_manage"
+            android:button="@null"
+            android:paddingTop="8sp"
+            android:textColor="#000000"
+            android:id="@+id/manage"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:text="管理"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:drawableTop="@drawable/ic_me"
+            android:paddingTop="8sp"
+            android:button="@null"
+            android:checked="true"
+            android:textColor="#000000"
+            android:id="@+id/me"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:text="我的"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>

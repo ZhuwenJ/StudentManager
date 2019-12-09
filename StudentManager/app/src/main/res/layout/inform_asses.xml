@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    标题改为考核通知-->
+    <include layout="@layout/register_title_bar"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/activityname"
+        android:textSize="18sp"
+        android:text="针对对象：全体成员"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/starttime"
+        android:textSize="18sp"
+        android:text="开始时间：2019-11-24  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/overtime"
+        android:textSize="18sp"
+        android:text="结束时间：2019-11-29  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/content"
+        android:textSize="18sp"
+        android:text="考核原因：为进一步考核成员水平"/>
+</LinearLayout>

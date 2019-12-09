@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent20"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <com.bruce.pickerview.LoopView
+        android:id="@+id/loop_view"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/demo"
+        app:canLoop="true"
+        app:centerTextColor="#ff000000"
+        app:drawItemCount="7"
+        app:initPosition="3"
+        app:lineColor="@color/colorPrimary"
+        app:textSize="25sp"
+        app:topBottomTextColor="#ffafafaf"/>
+</LinearLayout>

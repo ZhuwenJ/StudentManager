@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include  android:id="@+id/title"
+        layout="@layout/main_title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:id="@+id/prl_view"
+            android:layout_width="match_parent"
+            android:layout_height="625dp"
+            app:refreshType="smartisan">
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/inform_thelist"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.baoyz.widget.PullRefreshLayout>
+
+    <include layout="@layout/bottom_two" />
+    </RelativeLayout>
+</LinearLayout>

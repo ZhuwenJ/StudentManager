@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    改为查询-->
+    <include  android:id="@+id/title"
+        layout="@layout/register_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:id="@+id/search"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5sp"
+            android:text="查询内容:"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_radiogroup"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_1"
+                android:textSize="18sp"
+                android:text="部门名称"   />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_2"
+                android:checked="true"
+                android:textSize="18sp"
+                android:text="部门编号"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/search"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="部门编号"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/id"
+            style="@style/button"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBaseline="@+id/tx1"
+            android:layout_toRightOf="@+id/tx1" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:id="@+id/chaxun"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="查   询"/>
+
+</LinearLayout>

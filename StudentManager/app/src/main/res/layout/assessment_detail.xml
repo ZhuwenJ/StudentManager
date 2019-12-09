@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/title"
+        layout="@layout/register_title_bar"></include>
+    <TextView
+        android:layout_below="@id/title"
+        android:id="@+id/batch"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="考核批次">
+    </TextView>
+
+    <TextView
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/batch"></TextView>
+
+
+</RelativeLayout>

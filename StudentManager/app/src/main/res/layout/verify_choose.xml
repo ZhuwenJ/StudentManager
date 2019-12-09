@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include   android:id="@+id/dept" layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:id="@+id/one"
+        android:layout_below="@id/dept"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/btn_tab1"
+            android:drawableTop="@drawable/ic_department_management"
+            android:text="部门相关"/>
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/btn_tab2"
+            android:drawableTop="@drawable/ic_activity_two"
+            android:text="活动相关"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:id="@+id/two"
+        android:layout_below="@id/one"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/btn_tab3"
+            android:drawableTop="@drawable/ic_personnel_management"
+            android:text="人员相关"/>
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/btn_tab4"
+            android:drawableTop="@drawable/ic_leave_management"
+            android:text="请假相关"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_below="@id/two"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_two" />
+</RelativeLayout>

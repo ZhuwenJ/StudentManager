@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    标题改为活动审批-->
+    <include layout="@layout/register_title_bar"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="活动名称：考试"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="主办部门：体育部"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:text="协同部门："
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/department1"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="体育部"
+                android:textSize="18sp" />
+            <CheckBox
+                android:id="@+id/department2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习部"
+                android:textSize="18sp" />
+            <CheckBox
+                android:id="@+id/department3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="组织部"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="人          数：  10"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="开始时间： 2019-11-23 10：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="结束时间：2019-11-23 16:00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="地点：南校区操场"/>
+    <TextView
+        android:layout_marginLeft="60dp"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:text="活动内容：hhhhhhhhhhhhhhhhhhh"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/agree"
+                    android:layout_width="150dp"
+                    android:background="@drawable/button"
+                    android:layout_marginLeft="40dp"
+                    android:text="同意"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/disagree"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/agree"
+
+                    android:background="@drawable/button2"
+                    android:text="拒绝"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

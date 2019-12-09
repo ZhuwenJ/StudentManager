@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include  android:id="@+id/title"
+        layout="@layout/title_bar"/>
+
+    <include
+        android:id="@+id/click"
+        layout="@layout/department_click_chairman"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/click2"
+        layout="@layout/department_click_minister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <include
+        android:id="@+id/click3"
+        layout="@layout/department_click_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/prl_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshType="smartisan">
+
+    <!-- ListView、ScrollView、RecyclerView、Other -->
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:layout_width="match_parent"
+            android:id="@+id/department_list"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:layout_height="wrap_content"/>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+</LinearLayout>

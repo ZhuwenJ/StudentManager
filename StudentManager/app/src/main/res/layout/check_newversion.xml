@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/transparent20"
+    android:gravity="center"
+    android:layout_height="match_parent">
+<!--    重置密码后也需要弹出这样的文字，文字如下"重置后的密码是zucc"
+这个需要覆盖在原页面上，并且定时消失-->
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#B5B5B5"
+        android:textColor="@color/white"
+        android:text="已经是最新版本"
+        android:textSize="18sp"/>
+</LinearLayout>

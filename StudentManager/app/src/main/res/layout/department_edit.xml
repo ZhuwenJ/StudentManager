@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    将注册改为部门名称-->
+    <!--    头像之后换-->
+
+    <include  android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/Scrollac"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/photo1"
+                android:src="@mipmap/head_portrait"/>
+<!--                android:layout_below="@id/title"-->
+
+
+        <TextView
+            android:layout_marginTop="220dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_height="50dp"
+            android:text="部门名称: "
+            android:gravity="center"
+            android:id="@+id/depnamelable">
+        </TextView>
+        <EditText
+            android:id="@+id/depname"
+            android:layout_toRightOf="@+id/depnamelable"
+            android:layout_marginTop="220dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/ministeridlable"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/depname"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="部长名字："></TextView>
+        <EditText
+            android:layout_below="@id/depname"
+            android:id="@+id/ministerid"
+            android:layout_toRightOf="@+id/ministeridlable"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/chairmanidlable"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/ministerid"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="分管主席名字："></TextView>
+        <EditText
+            android:layout_below="@id/ministerid"
+            android:layout_toRightOf="@id/chairmanidlable"
+            android:id="@+id/chairmanid"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|left"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_below="@id/chairmanid"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="人数："
+            android:id="@+id/peoplecountlable">
+        </TextView>
+        <EditText
+            android:layout_below="@id/chairmanid"
+            android:layout_toRightOf="@+id/peoplecountlable"
+            android:id="@+id/peocount"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:gravity="left|center_vertical"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_below="@id/peocount"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_height="25dp"
+            android:text="部门介绍："
+            android:gravity="center"
+            android:id="@+id/introductionlable">
+        </TextView>
+        <EditText
+            android:layout_below="@id/introductionlable"
+            android:id="@+id/introduction"
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dep_edit"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:background="@android:color/holo_blue_light"
+            android:layout_below="@id/introduction"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

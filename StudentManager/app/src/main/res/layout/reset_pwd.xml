@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--将标配改为重置密码-->
+    <include layout="@layout/register_title_bar"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:id="@+id/uid"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:layout_marginTop="30dp"
+        android:hint=" 学号"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:id="@+id/resetpwd"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="重     置"/>
+</LinearLayout>

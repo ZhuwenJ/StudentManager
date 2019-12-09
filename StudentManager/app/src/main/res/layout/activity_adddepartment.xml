@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include  android:id="@+id/dept" layout="@layout/me_title_bar"/>
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="部门名"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/depname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx1"
+        android:layout_toRightOf="@+id/tx1"
+        android:layout_marginLeft="26.5sp"
+        android:background="@android:drawable/alert_light_frame"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="部长学号"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/ministerid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx2"
+        android:layout_toRightOf="@+id/tx2"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:background="@android:drawable/alert_light_frame"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="分管主席学号"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/chairmanid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx3"
+        android:layout_toRightOf="@+id/tx3"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:background="@android:drawable/alert_light_frame"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="简介"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/introduction"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignBaseline="@+id/tx4"
+        android:layout_toRightOf="@+id/tx4"
+        android:layout_marginLeft="26.5sp"
+        android:background="@android:drawable/alert_light_frame"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_adddep"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@id/introduction"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+    <include layout="@layout/bottom_two" />
+
+
+</RelativeLayout>

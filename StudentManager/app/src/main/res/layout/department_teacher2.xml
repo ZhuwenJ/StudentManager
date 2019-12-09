@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include  android:id="@+id/title"
+        layout="@layout/department_title_bar"/>
+    <include
+        android:id="@+id/click"
+        layout="@layout/department_click_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/inform"
+        android:background="@drawable/underline">
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:id="@+id/pic"
+            android:src="@mipmap/head_portrait"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chairname"
+                android:text="主席姓名"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请增加部门"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/inform2"
+        android:background="@drawable/underline">
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:id="@+id/pic2"
+            android:src="@mipmap/head_portrait"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chairname2"
+                android:text="主席姓名"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请减少部门"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

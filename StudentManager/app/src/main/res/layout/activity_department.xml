@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/head"
+        layout="@layout/me_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/thing"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/bumen_inform">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            <RadioButton
+                android:id="@+id/adddep"
+                android:layout_width="82dp"
+                android:layout_height="68dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_check"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="部门添加"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            <RadioButton
+                android:id="@+id/detdep"
+                android:layout_width="82dp"
+                android:layout_height="68dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_check"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:text="部门删除"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-302dp"
+            android:orientation="vertical"
+            android:layout_marginTop="153dp">
+            <RadioButton
+                android:id="@+id/search_dep"
+                android:layout_width="82dp"
+                android:layout_height="68dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_check"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="所有部门"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/bottom_two" />
+
+
+</RelativeLayout>

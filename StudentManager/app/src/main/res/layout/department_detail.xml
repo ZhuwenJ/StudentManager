@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    将注册改为部门名称-->
+<!--    头像之后换-->
+    <include  android:id="@+id/title"
+        layout="@layout/title_bar" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/photo1"
+        android:layout_below="@id/title"
+        android:src="@mipmap/head_portrait"/>
+    <TextView
+        android:id="@+id/depname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:layout_marginLeft="60dp"
+        android:text="部门名称: 体  育  部"/>
+    <TextView
+        android:id="@+id/ministerid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="部长学号：31701000"/>
+    <TextView
+        android:id="@+id/chairmanid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="分管主席学号：31701002"/>
+
+    <TextView
+        android:id="@+id/peocount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="人数：20"/>
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_marginLeft="60dp"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:text="部门介绍：体育部是学生体育活动的先锋队和带头人。以“开展体育活动，增强学生体质”为己任，并在此思想的指导下开展大量的形式活泼内容多样，意义深远的体育活动和体育竞赛活动，积极引导同学们参加，达到了良好的效果。并把一些很好的边缘体育活动和个别的极限体育活动介绍给大家，使其在校内推广、发展起来。要求该部门成员爱好体育，有一定的体育特长，并能积极配合其他职能部门举行的各项活动。"/>
+
+</LinearLayout>

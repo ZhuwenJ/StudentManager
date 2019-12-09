@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    标题改为活动通知-->
+    <include layout="@layout/register_title_bar"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/activityname"
+        android:textSize="18sp"
+        android:text="活动名称：运动会"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/userid"
+        android:textSize="18sp"
+        android:text="针对对象：全体部门成员"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/starttime"
+        android:textSize="18sp"
+        android:text="开始时间：2019-11-24  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/overtime"
+        android:textSize="18sp"
+        android:text="结束时间：2019-11-25  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/place"
+        android:textSize="18sp"
+        android:text="地点：南校区操场"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/content"
+        android:textSize="18sp"
+        android:text="活动内容：为了进一步检测大家的体育水平，促进身心健康发展，特意举办运动会"/>
+</LinearLayout>

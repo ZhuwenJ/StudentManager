@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    标题改为请假通知-->
+    <include layout="@layout/register_title_bar"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/vacateperson"
+        android:textSize="18sp"
+        android:text="请假人员：31701000"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/leavetime"
+        android:textSize="18sp"
+        android:text="开始时间：2019-11-24  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/backtime"
+        android:textSize="18sp"
+        android:text="结束时间：2019-11-29  00：00"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/vacatereason"
+        android:textSize="18sp"
+        android:text="请假原因：身体不舒服"/>
+</LinearLayout>

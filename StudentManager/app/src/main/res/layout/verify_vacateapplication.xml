@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_height="match_parent">
+    <include  android:id="@+id/dept" layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="请假人（学号）"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/vacateID"
+        style="@style/button"
+        android:layout_width="140dp"
+        android:layout_alignBottom="@+id/tx1"
+        android:layout_marginLeft="26.5sp"
+        android:layout_toRightOf="@+id/tx1"
+
+        android:textSize="20sp"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="所属部门"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/departmentname"
+        style="@style/button"
+        android:layout_alignBottom="@+id/tx2"
+        android:layout_toRightOf="@+id/tx2"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp"
+        android:editable="false"
+        />
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="请假开始时间"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/leavetime"
+        style="@style/button"
+        android:layout_width="230dp"
+        android:layout_alignBottom="@+id/tx3"
+        android:layout_toRightOf="@+id/tx3"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp"
+        android:editable="false"
+        />
+
+    <TextView
+        android:id="@+id/tx5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="返校时间"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/backtime"
+        android:layout_width="230dp"
+        style="@style/button"
+        android:layout_alignBottom="@+id/tx5"
+        android:layout_toRightOf="@+id/tx3"
+        android:digits="0123456789"
+        android:layout_marginLeft="26.5sp"
+        android:textSize="20sp"
+        android:editable="false"
+        />
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="请假原因"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reason"
+        style="@style/button"
+        android:layout_height="140dp"
+        android:layout_alignBaseline="@id/tx4"
+        android:layout_marginLeft="26.5sp"
+        android:layout_toRightOf="@+id/tx5"
+        android:textSize="20sp"
+        android:editable="false"
+        />
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同意"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@id/reason"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:id="@+id/btn_refuse"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="否决"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/btn_agree"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+    <include layout="@layout/bottom_two" />
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/vacateID"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/vacateID"
+        android:digits="0123456789"
+        android:textSize="20sp" />
+
+</RelativeLayout>

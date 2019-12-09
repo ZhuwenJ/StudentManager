@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include  android:id="@+id/title"
+        layout="@layout/manage_title_bar" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="150dp"
+        tools:ignore="MissingConstraints">
+    </com.youth.banner.Banner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/one"
+        android:layout_below="@id/banner"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/deparmentmanage"
+            android:drawableTop="@drawable/ic_department_management"
+            android:text="部门管理"/>
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/activitymanage"
+            android:drawableTop="@drawable/ic_activity_two"
+            android:text="活动管理"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/two"
+        android:layout_below="@id/one"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/peoplemanage"
+            android:drawableTop="@drawable/ic_personnel_management"
+            android:text="人员管理"/>
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/leavemanage"
+            android:drawableTop="@drawable/ic_leave_management"
+            android:text="请假管理"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/two"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/assessmanage"
+            android:drawableTop="@drawable/ic_assessment_management"
+            android:text="考评管理"/>
+
+        <TextView
+            style="@style/manage_item"
+            android:id="@+id/approvalmanage"
+            android:drawableTop="@drawable/ic_approval_management"
+            android:text="审批管理" />
+
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@+id/bottom" layout="@layout/bottom_two" />
+
+
+</RelativeLayout>

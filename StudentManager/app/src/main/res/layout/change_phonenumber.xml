@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--将标题改为修改手机号码-->
+    <include layout="@layout/register_title_bar"/>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:hint=" 请输入手机号码"
+            android:background="@drawable/shape"/>
+        <Button
+            android:id="@+id/get_verificationcode"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"
+            android:layout_alignRight="@id/phonenumber"
+            android:background="@drawable/button"
+            android:text="获取验证码" />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:id="@+id/verificationcode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:layout_marginTop="30dp"
+        android:hint=" 验证码"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:id="@+id/change_phonenumber"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="修     改"/>
+</LinearLayout>

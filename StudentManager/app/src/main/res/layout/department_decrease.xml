@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    标题改为罢免部门-->
+    <include  android:id="@+id/title"
+        layout="@layout/register_title_bar"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="主席姓名申请罢免部门"/>
+    <TextView
+        style="@style/department_increase_item"
+        android:text="部门名称：体 育 部"/>
+    <TextView
+        style="@style/department_increase_item"
+        android:text="罢免原因：没有什么用处"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="150dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="40dp"
+            android:text="同意"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/disagree"
+            android:layout_width="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/agree"
+
+            android:background="@drawable/button2"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

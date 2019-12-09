@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_above="@id/fragment_container"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/news"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/news_selector"
+            android:text="消息"
+            android:textColor="@drawable/text_selector"/>
+
+        <RadioButton
+            android:id="@+id/manage"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/manage_selector"
+            android:text="管理"
+            android:textColor="@drawable/text_selector"/>
+        <RadioButton
+            android:id="@+id/me"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/me_selector"
+            android:text="我的"
+            android:textColor="@drawable/text_selector"/>
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
